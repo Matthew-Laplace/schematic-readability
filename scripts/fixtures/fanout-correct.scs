@@ -1,0 +1,13 @@
+simulator lang=spectre
+
+subckt PRODUCER OUT\<0\> OUT\<1\>
+ends PRODUCER
+
+subckt CONSUMER IN\<0\> IN\<1\>
+ends CONSUMER
+
+subckt FANOUT_TOP
+    P0 (CODE\<0\> CODE\<1\>) PRODUCER
+    C0 (CODE\<0\> CODE\<1\>) CONSUMER
+    C1 (CODE\<0\> CODE\<1\>) CONSUMER
+ends FANOUT_TOP

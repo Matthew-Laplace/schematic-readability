@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cadence Schematic Generation Readability"
+  short_description: "Generate compact, electrically faithful schematics"
+  default_prompt: "Use $cadence-schematic-generation-readability to plan or review a compact Cadence schematic while preserving authoritative terminal-to-net connectivity."

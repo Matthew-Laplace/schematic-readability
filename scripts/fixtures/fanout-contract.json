@@ -1,0 +1,15 @@
+{
+  "parent_subckt": "FANOUT_TOP",
+  "automatic_net_patterns": ["^net[0-9]+(?:<[0-9]+>)?$"],
+  "connections": [
+    {
+      "id": "control_fanout",
+      "producer": {"instance": "P0", "ports": "OUT<0:1>"},
+      "consumers": [
+        {"instance": "C0", "ports": "IN<0:1>"},
+        {"instance": "C1", "ports": "IN<0:1>"}
+      ]
+    }
+  ],
+  "waivers": []
+}
