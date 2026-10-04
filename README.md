@@ -46,6 +46,12 @@ other tools are marked as such and never silently promoted to OA truth.
 
 ```
 SKILL.md                                        entry point and reference map
+README.md                                       this file
+ATTRIBUTION.md                                  upstream credits and evidence levels
+LICENSE                                         MIT
+CALIBRATION.md                                  calibrate the skill for your project
+CALIBRATION.ja.md                               the same, in Japanese
+CALIBRATION.zh-TW.md                            the same, in Traditional Chinese
 references/
   readability-rules.md                          cross-tool rules with evidence grades
   readability-scoring.md                        score model and render-review loop
@@ -60,6 +66,24 @@ scripts/
   thin_wide_wires.il                            wide-path to thin-line converter
   fixtures/                                     example contract and netlist
 ```
+
+## Calibrating For Your Project
+
+The shipped values are starting points, not measurements. Several are marked
+`[calibrated]` for exactly that reason.
+
+**[Calibrating This Skill For Your Project](CALIBRATION.md)** - also available in
+[日本語](CALIBRATION.ja.md) and [繁體中文](CALIBRATION.zh-TW.md) - walks through
+the three axes that make the output match your house style:
+
+1. **Exemplar calibration.** Draw a five-transistor OTA with the skill as-is,
+   then compare it against one you drew yourself and feed the differences back.
+   Repeat until a fresh run reproduces your exemplar's *grammar*.
+2. **Grid requirements.** Declare your project's lattice, pin-bank pitch, label
+   height, and half-grid policy. Every geometry rule derives from this, so
+   settle it first.
+3. **Note requirements.** Fix your conventions for in-drawing annotations and
+   for the delivery record, so a drawing reads as finished to your reviewers.
 
 ## Installing As A Skill
 
