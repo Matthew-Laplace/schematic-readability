@@ -16,10 +16,13 @@ Produce a schematic whose visible structure explains the circuit while its elect
 
 This Skill is the single home for schematic readability. Read the entry sections
 below for the workflow and the gates; open a reference only when its topic is in
-scope for the current task.
+scope for the current task. For a build from scratch or a substantial redraw,
+the construction handbook is the **procedure**; the sections in this file are
+the **contract** that procedure must satisfy.
 
 | Reference | Read it when |
 |---|---|
+| [construction-handbook.md](references/construction-handbook.md) | **Start here for any build from scratch or substantial redraw.** The end-to-end procedure: freeze, read the circuit, budget the canvas, place, route, annotate, verify, deliver - plus per-structure placement recipes for differential pairs, current mirrors, cascodes, level shifters and the rest |
 | [readability-rules.md](references/readability-rules.md) | You need the cross-tool rule set with evidence grades, numeric calibration, constraint semantics, connection-signature algorithms, or the audit checklist. Also the place to check before quoting any borrowed threshold |
 | [readability-scoring.md](references/readability-scoring.md) | The task asks whether a schematic is readable, clean, or professional; or you are about to run a beautification or cosmetic repair pass |
 | [layout-algorithms.md](references/layout-algorithms.md) | Placement is genuinely under-determined and must be computed rather than chosen: layering, crossing minimisation, obstacle-avoiding routing, constraint-weighted search |

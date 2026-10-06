@@ -214,6 +214,11 @@ Project note override
 
 ## Where Your Calibration Lives
 
+This handbook's companion is the construction procedure in
+`references/construction-handbook.md` - that is the sequence you are
+calibrating. Read it once before you start, so you know which step each override
+affects.
+
 Keep your three overrides in one place so they survive a skill update:
 
 | Axis | File | Section |

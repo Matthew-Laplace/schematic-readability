@@ -42,6 +42,40 @@ precisely why the second layer exists.
 Cadence Virtuoso / OA is the **authoritative adapter**. Rules borrowed from
 other tools are marked as such and never silently promoted to OA truth.
 
+## The Construction Handbook
+
+`SKILL.md` states the contract - what must hold, and what each write needs
+authorized. The **[construction handbook](references/construction-handbook.md)**
+states the procedure - what to actually do, in what order, and why that order
+matters.
+
+Its organizing idea is one sentence: *a schematic is a lossy visual encoding of
+a netlist, and readability is how quickly and reliably a competent engineer can
+decode it back.* Every rule in the skill follows from that, and the handbook
+makes the link explicit - each rule is paired with the specific decoding failure
+it prevents.
+
+The seven phases:
+
+```
+0  Freeze before drawing   contract, grid, exemplar, authorization, backup
+1  Read the circuit        idioms, islands, flow direction, symmetry axes
+2  Budget the canvas       full visual envelopes, on-grid coordinates
+3  Place                   spine first, mirrors as exact pairs, no overlap
+4  Route                   escapes from real geometry, trunks, no crossings
+5  Annotate                labels, text, frames, notes
+6  Verify                  two gates, geometry review, score, render review
+7  Deliver                 a two-layer report with explicit evidence levels
+```
+
+Phases are ordered because most unreadable schematics are the product of
+starting at phase 3. Two sections are worth reading even if you never follow the
+rest: **the structural cookbook** (detection signatures and placement recipes
+for differential pairs, current mirrors, cascode stacks, tail sources, level
+shifters, transmission gates, bias ladders, and digital cells) and **the failure
+catalog** (fourteen defects with their root causes and the early check that
+catches each).
+
 ## Layout
 
 ```
@@ -53,6 +87,7 @@ CALIBRATION.md                                  calibrate the skill for your pro
 CALIBRATION.ja.md                               the same, in Japanese
 CALIBRATION.zh-TW.md                            the same, in Traditional Chinese
 references/
+  construction-handbook.md                      the end-to-end construction procedure
   readability-rules.md                          cross-tool rules with evidence grades
   readability-scoring.md                        score model and render-review loop
   layout-algorithms.md                          placement and routing algorithms
